@@ -1,0 +1,114 @@
+<div class="email shadow">
+  <div class="container-fluid">
+    <div class="email-sent">
+      <div class="email-sent-title">
+        <div class="tilte-email">
+          <h1>Cài đặt email gửi</h1>
+        </div>
+        <div class="email-active">
+          <img (click)="checkIshow()" src="assets/svg/icon-drop.svg" />
+        </div>
+      </div>
+      <div *ngIf="!ishow">
+        <div class="email-sent-form">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Email host</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">Gmail</option>
+                  <option value="2">Yahoo</option>
+                  <option value="3">Khác</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">SMTP Server</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Other port</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Phương thức bảo mật</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option value="1">SSL</option>
+                  <option value="2">TLS</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Địa chỉ email người gửi</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Mật khẩu</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Tên email gửi đi</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="">Địa chỉ email nhận phản hồi</label>
+                <input type="text" placeholder="Nhập nôi dung" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="email-botton">
+          <button>Lưu</button>
+        </div>
+      </div>
+    </div>
+    <div class="email-action">
+      <div class="email-sent-title">
+        <div class="tilte-email">
+          <h1>Cài đặt hành động gửi email</h1>
+        </div>
+        <div class="email-active">
+          <img (click)="isActive()" src="assets/svg/icon-drop.svg" />
+        </div>
+      </div>
+      <div *ngIf="!showActive">
+        <div class="email-action-item">
+          <p class="item-name">Thêm mới dịch vụ</p>
+          <div class="item-action">
+            <img (click)="openCreateDialog('Thêm mới dịch vụ')" src="assets/svg/icon-edit.svg" />
+          </div>
+        </div>
+        <div class="email-action-item">
+          <p class="item-name">Thêm mới phản ánh</p>
+          <div class="item-action">
+            <img (click)="openCreateDialog('Thêm mới phản ánh')" src="assets/svg/icon-edit.svg" />
+          </div>
+        </div>
+        <div class="email-action-item">
+          <p class="item-name">Thêm mới phản ánh tin nhắn rác </p>
+          <div class="item-action">
+            <img (click)="openCreateDialog('Thêm mới phản ánh tin nhắn rác')" src="assets/svg/icon-edit.svg" />
+          </div>
+        </div>
+        <div class="email-action-item">
+          <p class="item-name">Phát hiện cổng CSKH bị lỗi</p>
+          <div class="item-action">
+            <img (click)="openCreateDialog('Phát hiện cổng CSKH bị lỗi')" src="assets/svg/icon-edit.svg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_2" data-name="Group 2" transform="translate(0 -0.091)">
+    <g id="_Icons_15_Headphones" data-name="_Icons / 15 Headphones" transform="translate(6.391 6.632)">
+      <path id="_15_Headphones" data-name="15 Headphones" d="M5.542,0A5.542,5.542,0,0,0,0,5.542V9.765a1.32,1.32,0,0,0,1.32,1.32h.528a.792.792,0,0,0,.792-.792V7.918a.792.792,0,0,0-.792-.792A.528.528,0,0,1,1.32,6.6V5.542a4.223,4.223,0,1,1,8.446,0V6.6a.528.528,0,0,1-.528.528.792.792,0,0,0-.792.792v2.375a.792.792,0,0,0,.792.792h.528a1.32,1.32,0,0,0,1.32-1.32V5.542A5.542,5.542,0,0,0,5.542,0Z" transform="translate(0 0)" fill="#fff" stroke="#fff" stroke-width="1"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(0 0.091)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="12" cy="12" r="12" stroke="none"/>
+      <circle cx="12" cy="12" r="11" fill="none"/>
+    </g>
+  </g>
+</svg>

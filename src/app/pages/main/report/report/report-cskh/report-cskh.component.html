@@ -1,0 +1,55 @@
+<app-filter
+  [(listFilter)]="listFilter"
+  (callback)="handleCallback($event)"
+></app-filter>
+<br>
+<div class="container-fluid shadow chart-cskh">
+    <!-- <div class="chart">
+        <div id="chart">
+            <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [labels]="chartOptions.labels"
+                [responsive]="chartOptions.responsive"></apx-chart>
+            <br>
+            <b>Số lần kết nối thành công</b>
+        </div>
+        <div id="chart1">
+            <apx-chart [series]="chartOptions1.series" [chart]="chartOptions1.chart" [labels]="chartOptions1.labels"
+                [responsive]="chartOptions1.responsive"></apx-chart>
+            <br>
+            <b>Số lần kết nối không thành công</b>
+        </div>
+    </div> -->
+    <br>
+    <br>
+    <div class="detail">
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Thời gian</th>
+                    <th scope="col">Tên dịch vụ</th>
+                    <th scope="col">Thông báo gửi thành công</th>
+                    <th scope="col">Thông báo gửi không thành công</th>
+                    <th scope="col">Thời gian khắc phục</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>07/04/2021</td>
+                    <td>Icall</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>07/04/2021</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>07/04/2021</td>
+                    <td>SMS</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>07/04/2021</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

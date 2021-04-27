@@ -1,0 +1,75 @@
+.email {
+    height: 100%;
+    .email-sent-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f0f0f0;
+        height: 74px;
+        padding: 0 36px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        h1 {
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .email-active {
+            width: 36px;
+            height: 36px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+    }
+    .email-sent {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+        margin: 0 20px 0 20px;
+        .email-sent-form {
+            margin-top: 30px;
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                input,
+                select {
+                    width: 326px;
+                    height: 50px;
+                    border: 1px solid #bcbcbc;
+                    border-radius: 10px;
+                    box-shadow: 0 0 3px 1px rgb(0 0 0 / 16%);
+                    outline: none;
+                    padding: 10px;
+                }
+            }
+        }
+        .email-botton {
+            button {
+                padding: 0 45px;
+                border-radius: 25px;
+                height: 50px;
+                text-align: center;
+                color: white;
+                display: block;
+                border: none;
+                background-color: #46a9ff;
+            }
+        }
+    }
+    .email-action {
+        padding-top: 45px;
+        margin: 0 20px 0 20px;
+        .email-action-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            background-color: #f9f9f9;
+            margin-bottom: 15px;
+            padding: 0 30px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.chart-cskh{
+    height: 100%;
+    .chart{
+        display: flex;
+    }
+    #chart, #chart1{
+        width: 50%;
+        margin-left: 10%;
+        padding-top: 50px;
+        b{
+            margin-left: 50px;
+        }
+    }
+    .detail{
+        width: 80%;
+        margin: auto;
+        .table{
+            
+            th, td{
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+<app-filter [(listFilter)]="listFilter" (callback)="handleCallback($event)">
+</app-filter>
+<br />
+<div class="container-fluid list-port shadow">
+  <div class="button">
+      <button class="btn mbf-btn-save-note" (click)="openDialogCreate()">Thêm mới</button>
+      <button class="btn mbf-btn-save-note" (click)="openDialogImport()">Import</button>
+  </div>
+  <div class="box">
+    <div
+      class="box-content"
+      *ngFor="let item of dataSub"
+      (click)="openDialog(item)"
+    >
+      <img [src]="item.ImageURL" alt="" />
+      <div class="content-right">
+        <b>Tên dịch vụ: </b><span>{{ item.name }}</span>
+        <br />
+        <b>Ngày tạo: </b><span>{{ item["Date created"] }}</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+

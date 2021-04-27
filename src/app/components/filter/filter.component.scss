@@ -1,0 +1,56 @@
+.ci-base-filter {
+  padding: 20px;
+  .title {
+    margin-bottom: 10px;
+  }
+  .listFilter {
+    display: flex;
+    position: relative;
+    .search {
+      position: absolute;
+      right: 0;
+      ::placeholder {
+        color: white;
+      }
+      .search-input {
+        position: relative;
+        img {
+          position: absolute;
+          right: 12px;
+          top: 12px;
+        }
+      }
+    }
+    .filter-text {
+      width: 85%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .item-filter {
+      margin-bottom: 20px;
+      margin-right: 15px;
+      select {
+        width: 100%;
+      }
+    }
+  }
+}
+::ng-deep .datepicker {
+  .mat-form-field-appearance-fill .mat-form-field-flex {
+    background: none;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    padding: 0;
+    height: 40px;
+  }
+  .mat-form-field-underline {
+    display: none;
+  }
+  .mat-date-range-input {
+    padding: 10px;
+  }
+  .mat-form-field-wrapper {
+    padding: 0;
+    margin-top: 10px;
+  }
+}

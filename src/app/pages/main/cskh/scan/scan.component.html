@@ -1,0 +1,27 @@
+<div class="shadow scan-result">
+  <h3><strong>KẾT QUẢ QUÉT</strong></h3>
+  <div class="scan-detail">
+    <div class="box-content">
+      <p>Quét thành công</p>
+      <h3>{{checkTrue}}</h3>
+    </div>
+    <div class="box-content">
+      <p>Quét thất bại</p>
+      <h3>{{checkFalse}}</h3>
+    </div>
+    <div class="box-content">
+      <p>Đã gửi thông báo</p>
+      <h3>{{checkFalse}}</h3>
+    </div>
+  </div>
+  <br /><br />
+  <h3><strong>Chi tiết</strong></h3>
+  <div class="wrapper">
+    <div class="row line" *ngFor="let item of fakeData">
+      <div class="col-1 waring"><img *ngIf="item.check === false" src="assets/svg/icon-warning.svg" alt="" srcset=""></div>
+      <div class="col-9 link" ><a [ngClass]="item.check === true ? '' : 'false'" href="{{item.link}}">{{item.link}}</a></div>
+      <div class="col-2 status-true" *ngIf="item.check === true">Kết nối thành công</div>
+      <div class="col-2 status-false" *ngIf="item.check === false">Kết nối thất bại</div>
+    </div>
+  </div>
+</div>

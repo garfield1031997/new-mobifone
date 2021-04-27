@@ -1,0 +1,89 @@
+@import "src/app/styles/colors";
+@import "src/app/styles/font";
+@import "src/app/styles/variables";
+::-webkit-scrollbar {
+    width: 3px;
+  }
+.nav {
+    background-color: $color-bg-menu;
+    width: 15vw;
+    height: 100vh;
+    border-right: 1px solid #FFFFFF;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    .logo{
+        width: 92%;
+        img{
+            width: 100%;
+        }
+    }
+    .scroll{
+        height: 76vh;
+        overflow: auto;
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+  
+        margin-bottom: 20px;
+        position: relative;
+        margin-left: 15px;       
+        flex-direction: column;
+        img {
+            margin: 0 30px;
+        }
+        .nav-head{
+            margin-bottom: 20px;
+            color: $white;
+            width: 250px;
+            height: 57px !important;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            font-size: 16px;
+            position: relative;
+            cursor: pointer;
+            &:hover:not(:last-child) {
+                background: $gradients-menu-active;
+            }
+            .nav-link {
+                position: relative;
+                width: 295px;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                img {
+                    margin: 0 30px;
+                }
+               
+            }
+  
+        }
+        .sub-menu{
+           margin-left: 70px;
+
+            &-path{
+                cursor: pointer;
+                width: 170px;
+                height: 60px;
+                color: white;
+                line-height: 60px;
+                outline: none;
+                border: none;
+            }
+         }
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+    .selected {
+        background: $gradients-menu-active;
+        
+    }
+    .select-setting{
+        font-weight: bold;
+    }
+}

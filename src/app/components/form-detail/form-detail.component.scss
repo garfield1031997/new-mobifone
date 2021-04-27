@@ -1,0 +1,39 @@
+.form-create {
+    .title {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .content {
+        padding: 20px;
+        input,
+        select {
+            width: 95%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #e4e4e4;
+        }
+        .img{
+            display: flex;
+            flex-direction: column;
+            img{
+               width: 150px;
+               height: 150px;
+            }
+        }
+    }
+    .group-btn {
+        text-align: center;
+    }
+}
+::ng-deep .NgxEditor__Wrapper {
+    width: 95%;
+    height: 350px;
+    .NgxEditor__MenuBar {
+        overflow: auto;
+    }
+    .NgxEditor {
+        height: 100px;
+        overflow: auto;
+    }
+}

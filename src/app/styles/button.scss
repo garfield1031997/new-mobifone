@@ -1,0 +1,40 @@
+.mbf-btn {
+    margin-right: 10px;
+    width: 120px;
+    &-cancel {
+        background-color: #d6d6d6;
+        color: white;
+    }
+    &-save-note {
+        background-color: white;
+        color: #1894ff;
+        border: 1px solid #1894ff;
+    }
+    &-save {
+        background-color: #1894ff;
+        color: white;
+    }
+}
+.base-button-upload{
+    text-align: center;
+    &-cancel{
+        background-color: #D6D6D6;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        outline: none;
+        margin-right: 10px;
+    }
+    &-import{
+        background-color: #1894FF;
+        width: 120px;
+        height: 50px;
+        border-radius: 10px;
+        color: white;
+        border: none;
+        outline: none;
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,77 @@
+<div class="table-style shadow">
+  <div class="row">
+    <div class="col-5">
+      <div class="paginator">
+        <div class="current-page">
+          <button (click)="backPage()">
+            <img src="assets/svg/icon-left.svg" />
+          </button>
+          <span>{{ currentPage }}</span>
+          <button (click)="nextPage()">
+            <img src="assets/svg/icon-right.svg" />
+          </button>
+        </div>
+        <span>/ {{ totalPage }}</span>
+      </div>
+    </div>
+    <div class="col-7 group-btn">
+      <button
+        *ngFor="let i of listActive"
+        class="btn"
+        [class]="i.class"
+        (click)="onClickBtnActive(i)"
+      >
+        <img
+          *ngIf="i.text === 'Import'"
+          src="assets/svg/icon-import.svg"
+          alt=""
+        />
+        <span class="ml-2">{{ i?.text }}</span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th
+            scope="col"
+            *ngFor="let item of listlable"
+            [style.min-width.px]="item.width"
+          >
+            <div class="content">{{ item.name }}</div>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of dataSub">
+          <td *ngFor="let i of listlable" (click)="onClickSetting(item, 'detail')">
+            <div
+              class="data-content"
+              [style.width.px]="i.width"
+              [style.text-align]="i.textAlign"
+            >
+              <span *ngIf="i.type === 'number'">{{ item[i.id] | number }}</span>
+              <span *ngIf="i.type === 'text'">{{ item[i.id] }}</span>
+              <span *ngIf="i.type === 'text-color'" [style.color]="item.check === false ? i.color : '#1894FF' ">{{ item[i.id] }}</span>
+              <span *ngIf="i.type === 'object'">{{ item[i.id][i.idSub] }}</span>
+              <span *ngIf="i.type === 'date'">{{
+                item[i.id] | date: "dd-MM-YYYY"
+              }}</span>
+              <span *ngIf="i.type === 'setting'">
+                <img
+                  src="assets/svg/icon-edit.svg"
+                  (click)="onClickSetting(item, 'edit')"
+                />
+                <img
+                  src="assets/svg/icon-delete.svg"
+                  (click)="onClickSetting(item, 'delete')"
+                />
+              </span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

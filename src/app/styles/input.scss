@@ -1,0 +1,14 @@
+.base-input{
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #E4E4E4;
+   &-search{
+       background-color: #46A9FF;
+       border-radius: 20px;
+       height: 40px;
+       width: 150px;
+       padding: 5px 35px 5px 20px;
+       border: none;
+       color: white;
+   }
+}
